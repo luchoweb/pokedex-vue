@@ -19,6 +19,7 @@ onMounted(async () => {
   await typesStore.fetchTypes();
   await pokedex.reloadForFilters();
   isLoading.value = false;
+  document.title = "Pokédex - by Lucho Web";
 });
 
 watch([query, type], () => {

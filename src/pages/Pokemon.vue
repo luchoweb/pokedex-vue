@@ -36,7 +36,7 @@ async function loadPokemon(q: string) {
   try {
     const res = await api.get<Pokemon>(`/pokemon/${q.toLowerCase()}`);
     pokemon.value = res.data;
-    document.title = `${displayName(res.data.name)} · Pokédex`;
+    document.title = `${displayName(res.data.name)} - Pokédex by Lucho Web`;
   } catch (e: any) {
     error.value = "Could not load this Pokémon. Check the name/ID.";
   } finally {
