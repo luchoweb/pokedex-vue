@@ -116,6 +116,8 @@ npm run preview
 
 The generated content in dist/ can be deployed to Vercel, Netlify, or any static server.
 
+Live version: https://pokedex-glass.netlify.app
+
 ---
 
 ## License
