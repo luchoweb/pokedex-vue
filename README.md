@@ -1,6 +1,7 @@
-# Pokedex — Vue 3 + TypeScript + Vite
+# Pokedex - Vue 3 + TypeScript + Vite
 
-Pokedex app built with **Vue 3**, **TypeScript**, **Pinia**, and **Vue Router**.  
+Pokedex app built with **Vue 3**, **TypeScript**, **Pinia**, and **Vue Router**.
+
 It demonstrates modern frontend architecture practices: stores, composables, HTTP services, lazy loading, controlled concurrency, and separation of concerns.
 
 ---
@@ -18,15 +19,17 @@ It demonstrates modern frontend architecture practices: stores, composables, HTT
 
 ## Installation
 
-git clone <REPO_URL>
-cd <REPO_NAME>
+```shell
+git clone https://github.com/luchoweb/pokedex-vue
+cd pokedex-vue
 npm install
+```
 
 ---
 
 ## Run in development mode
 
-npm run dev
+`npm run dev`
 
 Open in your browser:
 
@@ -36,28 +39,30 @@ http://localhost:5173
 
 ## Available scripts
 
+```shell
 npm run dev # development server
 npm run build # production build
 npm run preview # preview production build
 npm run lint # run ESLint analysis
 npm run format # format code with Prettier
 npm run test # run tests
+```
 
 ---
 
 ## Project structure
 
 src/
-├─ assets/ # images and static resources
-├─ components/ # reusable UI components
-├─ pages/ # router views (Pokedex, About, Pokemon)
-├─ stores/ # global state with Pinia
-├─ composables/ # reactive logic (useXxx)
-├─ services/ # HTTP functions and non-reactive logic
-├─ utils/ # pure helpers and utilities
-├─ router/ # route configuration
-├─ App.vue
-└─ main.ts
+|- assets/ # images and static resources
+|- components/ # reusable UI components
+|- pages/ # router views (Pokedex, About, Pokemon)
+|- stores/ # global state with Pinia
+|- composables/ # reactive logic (usePokedex)
+|- services/ # HTTP functions and non-reactive logic
+|- utils/ # pure helpers and utilities
+|- router/ # route configuration
+|- App.vue
+|- main.ts
 
 > Conventions:
 >
@@ -70,7 +75,7 @@ src/
 
 ## Key concepts
 
-- Composition API + <script setup> → cleaner and more declarative code
+- Composition API + `<script setup>` → cleaner and more declarative code
 - Pinia → global and persistent state
 - Composables (useXxx.ts) → reusable and testable logic
 - HTTP services → clean requests without hooks
