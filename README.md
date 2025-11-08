@@ -52,17 +52,19 @@ npm run test # run tests
 
 ## Project structure
 
+```bash
 src/
-|- assets/ # images and static resources
-|- components/ # reusable UI components
-|- pages/ # router views (Pokedex, About, Pokemon)
-|- stores/ # global state with Pinia
-|- composables/ # reactive logic (usePokedex)
-|- services/ # HTTP functions and non-reactive logic
-|- utils/ # pure helpers and utilities
-|- router/ # route configuration
-|- App.vue
-|- main.ts
+├─ assets/         # images and static resources
+├─ components/     # reusable UI components
+├─ pages/          # router views (Pokedex, About, Pokemon)
+├─ stores/         # global state with Pinia
+├─ composables/    # reactive logic (usePokedex)
+├─ services/       # HTTP functions and non-reactive logic
+├─ utils/          # pure helpers and utilities
+├─ router/         # route configuration
+├─ App.vue
+└─ main.ts
+```
 
 > Conventions:
 >
