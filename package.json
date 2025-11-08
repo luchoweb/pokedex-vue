@@ -10,7 +10,10 @@
     "postinstall": "patch-package",
     "lint": "eslint . --ext .ts,.vue",
     "lint:fix": "eslint . --ext .ts,.vue --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "axios": "^1.13.2",
@@ -21,16 +24,21 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
     "@tailwindcss/vite": "^4.1.17",
+    "@types/jsdom": "^27.0.0",
     "@types/node": "^24.6.0",
     "@typescript-eslint/eslint-plugin": "^8.46.3",
     "@typescript-eslint/parser": "^8.46.3",
     "@vitejs/plugin-vue": "^6.0.1",
+    "@vitest/coverage-v8": "^4.0.8",
+    "@vitest/ui": "^4.0.8",
+    "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.8.1",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-vue": "^10.5.1",
+    "jsdom": "^27.1.0",
     "patch-package": "^8.0.1",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
@@ -38,6 +46,7 @@
     "tailwindcss": "^4.1.17",
     "typescript": "~5.9.3",
     "vite": "^7.1.7",
+    "vitest": "^4.0.8",
     "vue-tsc": "^3.1.0"
   }
 }

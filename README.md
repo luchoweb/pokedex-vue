@@ -41,6 +41,7 @@ npm run build # production build
 npm run preview # preview production build
 npm run lint # run ESLint analysis
 npm run format # format code with Prettier
+npm run test # run tests
 
 ---
 
@@ -94,6 +95,8 @@ src/
 - Suggested framework: Vitest
 - Recommended test cases:
   - Pagination and incremental loading
+  - Filter bar component
+  - Theme store
 
 ---
 

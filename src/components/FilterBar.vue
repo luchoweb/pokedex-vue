@@ -75,6 +75,7 @@ function clearAll() {
         />
       </svg>
       <input
+        id="search-query"
         v-model="queryLocal"
         type="text"
         inputmode="search"
@@ -88,6 +89,7 @@ function clearAll() {
         class="rounded-xl ring-1 ring-black/10 dark:ring-white/10 bg-white/70 dark:bg-slate-800/70 px-3 py-2"
       >
         <select
+          id="select-types"
           v-model="typeLocal"
           class="cursor-pointer bg-transparent outline-none text-sm capitalize"
         >

@@ -58,6 +58,10 @@ export const usePokeTypesStore = defineStore("pokeTypes", () => {
     loadingTypeMap.clear();
   }
 
+  function seedTestTypes(types: TypeItem[]) {
+    allTypes.value = types;
+  }
+
   return {
     loadingTypes,
     types,
@@ -66,5 +70,6 @@ export const usePokeTypesStore = defineStore("pokeTypes", () => {
     fetchTypes,
     ensureTypeSet,
     reset,
+    seedTestTypes,
   };
 });
