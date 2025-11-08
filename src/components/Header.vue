@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref, watch } from "vue";
-import { RouterLink, useRoute } from "vue-router";
-
-const route = useRoute();
+import { RouterLink } from "vue-router";
 
 const isDark = ref(false);
 
@@ -24,8 +22,6 @@ watch(isDark, (v) => {
   localStorage.setItem("theme", v ? "dark" : "light");
   document.documentElement.classList.toggle("dark", v);
 });
-
-const isActive = (path: string) => route.path.startsWith(path);
 </script>
 
 <template>
@@ -34,7 +30,7 @@ const isActive = (path: string) => route.path.startsWith(path);
   >
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <RouterLink to="/" class="group inline-flex items-center gap-2">
-        <div class="flex items-center gap-2 dark:text-white">
+        <div lass="flex items-center gap-2 dark:text-white">
           <svg
             class="size-6"
             viewBox="0 0 64 64"
@@ -53,19 +49,21 @@ const isActive = (path: string) => route.path.startsWith(path);
       </RouterLink>
 
       <nav class="hidden sm:flex items-center gap-1">
-        <RouterLink
-          to="/"
-          class="px-3 py-2 rounded-lg text-sm font-medium transition hover:bg-slate-900/5 dark:hover:bg-white/10"
-          :class="isActive('/') ? 'bg-slate-900/10 dark:bg-white/10' : ''"
-        >
-          Pokedex
+        <RouterLink v-slot="{ isActive }" to="/">
+          <a
+            class="px-3 py-2 rounded-lg text-sm font-medium transition hover:bg-slate-900/5 dark:hover:bg-white/10"
+            :class="isActive ? 'bg-slate-900/10 dark:bg-white/10' : ''"
+          >
+            Pokedex
+          </a>
         </RouterLink>
-        <RouterLink
-          to="/about"
-          class="px-3 py-2 rounded-lg text-sm font-medium transition hover:bg-slate-900/5 dark:hover:bg-white/10"
-          :class="isActive('/about') ? 'bg-slate-900/10 dark:bg-white/10' : ''"
-        >
-          About
+        <RouterLink to="/about" v-slot="{ isActive }">
+          <a
+            class="px-3 py-2 rounded-lg text-sm font-medium transition hover:bg-slate-900/5 dark:hover:bg-white/10"
+            :class="isActive ? 'bg-slate-900/10 dark:bg-white/10' : ''"
+          >
+            About
+          </a>
         </RouterLink>
       </nav>
 
