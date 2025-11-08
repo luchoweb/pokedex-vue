@@ -65,7 +65,6 @@ const badges = ["Vue 3", "TypeScript", "Pinia", "Vue Router", "Axios", "Vitest",
       </div>
     </div>
 
-    <!-- Implementation notes -->
     <div class="space-y-2">
       <h2 class="text-lg font-bold">Implementation Notes</h2>
       <ul class="list-disc pl-5 text-slate-700 dark:text-slate-200 space-y-1">
@@ -87,7 +86,6 @@ const badges = ["Vue 3", "TypeScript", "Pinia", "Vue Router", "Axios", "Vitest",
       </ul>
     </div>
 
-    <!-- CTAs -->
     <div class="flex flex-wrap items-center gap-3 pt-2">
       <RouterLink
         to="/"

@@ -161,7 +161,6 @@ function speak(name: string) {
         </div>
       </div>
 
-      <!-- Actions -->
       <div class="flex items-center gap-2">
         <RouterLink
           to="/pokedex"
@@ -190,7 +189,6 @@ function speak(name: string) {
       </div>
     </div>
 
-    <!-- Loading -->
     <div v-if="loading" class="mt-8 grid gap-4 md:grid-cols-2">
       <div class="h-40 rounded-xl bg-slate-200/60 dark:bg-slate-800/40 animate-pulse" />
       <div class="h-40 rounded-xl bg-slate-200/60 dark:bg-slate-800/40 animate-pulse" />
@@ -199,7 +197,6 @@ function speak(name: string) {
       />
     </div>
 
-    <!-- Error -->
     <div
       v-else-if="error"
       class="mt-6 rounded-xl p-4 ring-1 ring-black/5 dark:ring-white/10 bg-rose-50 text-rose-700 dark:bg-rose-900/30 dark:text-rose-100"
@@ -207,9 +204,7 @@ function speak(name: string) {
       {{ error }}
     </div>
 
-    <!-- Content -->
     <div v-else-if="pokemon" class="mt-6 grid gap-6 md:grid-cols-2">
-      <!-- About / basics -->
       <section
         class="rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/70 dark:bg-slate-900/60 p-4"
       >
@@ -239,7 +234,6 @@ function speak(name: string) {
         </dl>
       </section>
 
-      <!-- Sprites / gallery -->
       <section
         class="rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/70 dark:bg-slate-900/60 p-4"
       >
@@ -274,7 +268,6 @@ function speak(name: string) {
         </div>
       </section>
 
-      <!-- Stats -->
       <section
         class="md:col-span-2 rounded-2xl ring-1 ring-black/5 dark:ring-white/10 bg-white/70 dark:bg-slate-900/60 p-4"
       >
@@ -301,7 +294,6 @@ function speak(name: string) {
         </ul>
       </section>
 
-      <!-- Bottom navigation for small screens -->
       <div class="md:col-span-2 flex items-center justify-between pt-2 sm:hidden">
         <RouterLink
           v-if="prevLink"
@@ -323,6 +315,4 @@ function speak(name: string) {
   </section>
 </template>
 
-<style scoped>
-/* todo utilitario; sin CSS adicional */
-</style>
+<style scoped></style>
