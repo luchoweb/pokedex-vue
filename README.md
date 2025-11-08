@@ -19,7 +19,7 @@ It demonstrates modern frontend architecture practices: stores, composables, HTT
 
 ## Installation
 
-```shell
+```bash
 git clone https://github.com/luchoweb/pokedex-vue
 cd pokedex-vue
 npm install
@@ -29,7 +29,9 @@ npm install
 
 ## Run in development mode
 
-`npm run dev`
+```bash
+npm run dev
+```
 
 Open in your browser:
 
@@ -39,7 +41,7 @@ http://localhost:5173
 
 ## Available scripts
 
-```shell
+```bash
 npm run dev # development server
 npm run build # production build
 npm run preview # preview production build
@@ -58,7 +60,7 @@ src/
 ├─ components/     # reusable UI components
 ├─ pages/          # router views (Pokedex, About, Pokemon)
 ├─ stores/         # global state with Pinia
-├─ composables/    # reactive logic (usePokedex)
+├─ composables/    # reactive logic (useXxx)
 ├─ services/       # HTTP functions and non-reactive logic
 ├─ utils/          # pure helpers and utilities
 ├─ router/         # route configuration
