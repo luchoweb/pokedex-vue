@@ -4,6 +4,18 @@ Pokedex app built with **Vue 3**, **TypeScript**, **Pinia**, and **Vue Router**.
 
 It demonstrates modern frontend architecture practices: stores, composables, HTTP services, lazy loading, controlled concurrency, and separation of concerns.
 
+### Screenshots
+
+Dark mode:
+
+<img width="1205" height="696" alt="image" src="https://github.com/user-attachments/assets/651b4f5f-7d81-4587-8385-cc3d2838b69a" />
+
+--
+
+Light mode:
+
+<img width="1191" height="702" alt="image" src="https://github.com/user-attachments/assets/11a0c0b7-8520-4b98-a8af-4e80fe29fff9" />
+
 ---
 
 ## Prerequisites
