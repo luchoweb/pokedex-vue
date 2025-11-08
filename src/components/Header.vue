@@ -30,7 +30,7 @@ watch(isDark, (v) => {
   >
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <RouterLink to="/" class="group inline-flex items-center gap-2">
-        <div lass="flex items-center gap-2 dark:text-white">
+        <div class="flex items-center gap-2 dark:text-white">
           <svg
             class="size-6"
             viewBox="0 0 64 64"
