@@ -69,13 +69,20 @@ const nextLink = computed(() =>
 
 const speaking = ref(false);
 const supported = "speechSynthesis" in window;
+const pronunciationOverrides: Record<string, string> = {
+  pikachu: "Peekahchoo",
+  ekans: "E-kans",
+  "nidoran-f": "Ni doran-f",
+  "nidoran-m": "Ni doran-m",
+};
 
 function speak(name: string) {
   if (!supported || !name) return;
-  try {
-    const phrase = name.charAt(0).toUpperCase() + name.slice(1);
 
-    const u = new SpeechSynthesisUtterance(phrase);
+  try {
+    const pokemonName = pronunciationOverrides[name] || name;
+
+    const u = new SpeechSynthesisUtterance(pokemonName);
     u.lang = "en-US";
     u.rate = 1;
     u.pitch = 1;
